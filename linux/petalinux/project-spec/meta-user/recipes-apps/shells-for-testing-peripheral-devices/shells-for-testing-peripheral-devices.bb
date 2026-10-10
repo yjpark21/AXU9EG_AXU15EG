@@ -24,7 +24,7 @@ SRC_URI = "file://can_test.sh \
 
 S = "${WORKDIR}"
 
-FILES_${PN} += "/home/root/shells_for_testing_peripheral_devices/*"
+FILES:${PN} += "/home/root/shells_for_testing_peripheral_devices/*"
 
 do_install() {
 	     install -d ${D}/home/root/shells_for_testing_peripheral_devices
