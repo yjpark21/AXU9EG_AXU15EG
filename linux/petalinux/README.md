@@ -42,7 +42,7 @@ SSTATE_DIR = "/home/vivado/yocto_sstate_aarch64"
 ### Cautions
 Because some tricks are hard-coded, using petalinux-config may have no effect. Please refer to Yocto config file (project-spec/configs/config) and u-boot script (project-spec/meta-user/recipes-bsp/u-boot/u-boot-zynq-scr/boot.cmd.default.initrd).  
   
-Settings may have no effect:
+Settings overridden by hard-coding:
 - bootargs
 - Addresses of image loaded
 - SD card related settings
