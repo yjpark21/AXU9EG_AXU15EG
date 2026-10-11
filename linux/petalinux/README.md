@@ -18,7 +18,7 @@ Copy build results (images/linux) to SD card first partition (FAT32).
 petalinux-package --wic --bootfiles "BOOT.BIN boot.scr Image system.dtb"
 gzip -f images/linux/petalinux-sdimage.wic
 ```
-The wic image can be used to write to SD card using balenaEtcher.
+The wic image can be used to write to SD card using balenaEtcher (https://etcher.balena.io/).
 
 ### Check pre-downloaded Yocto mirror and sstate cache
 You can download Yocto mirror data and sstate cache from Xilinx Petalinux Download page to avoid online downloading and save build time.
