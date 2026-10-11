@@ -39,3 +39,7 @@ The lines below are related to Yocto mirror and sstate cache locations. Refer to
 DL_DIR = "/home/vivado/yocto_mirror"
 SSTATE_DIR = "/home/vivado/yocto_sstate_aarch64"
 ```
+### Cautions
+Because some tricks are hard-coded, using petalinux-config may have no effect.  
+- bootargs
+- Addresses of image loaded
