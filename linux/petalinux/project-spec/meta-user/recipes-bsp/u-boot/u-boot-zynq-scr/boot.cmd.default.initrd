@@ -51,6 +51,9 @@ do
 		fdt set /axi/mmc@ff170000 no-1-8-v
 		fdt set /axi/mmc@ff170000 cap-sd-highspeed
 
+		# Disable write protection of SD
+		fdt set /axi/mmc@ff170000 disable-wp
+
 		# Remove high speed operation mode switches
 		#fdt rm /axi/mmc@ff170000 sd-uhs-sdr104
 		#fdt rm /axi/mmc@ff170000 sd-uhs-sdr50
