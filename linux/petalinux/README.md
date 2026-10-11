@@ -16,7 +16,7 @@ Copy build results (images/linux) to SD card first partition (FAT32).
 ### (Optional) Create .wic package
 ```
 petalinux-package --wic --bootfiles "BOOT.BIN boot.scr Image system.dtb" \
-&& gzip images/linux/petalinux-sdimage.wic
+&& gzip -f images/linux/petalinux-sdimage.wic
 ```
 
 ### Check pre-downloaded Yocto mirror and sstate cache
