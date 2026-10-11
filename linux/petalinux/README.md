@@ -1,6 +1,6 @@
 ### What is this?
 This is a modified version of PetaLinux Yocto project, converted from the original ALINX project for PetaLinux v2020.1 to work with PetaLinux v2022.2.  
-There are some problems with SD card negotiation steps during boot up in PetaLinux v2022.2, so some tricks are necessary to make it work. The u-boot script has been modified for this (project-spec/meta-user/recipes-bsp/u-boot/u-boot-zynq-scr/boot.cmd.default.initrd).  
+There are some problems with SD card negotiation steps during boot up in PetaLinux v2022.2, so some tricks are necessary to make it work. The u-boot script has been modified for this (project-spec/meta-user/recipes-bsp/u-boot/u-boot-zynq-scr/boot.cmd.default.initrd and project-spec/configs/config).  
   
 Key changes:  
 1. Yocto/BiteBake syntax has been updated to work with new Yocto build engine.
