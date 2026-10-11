@@ -5,7 +5,7 @@ There are some problems with SD card negotiation steps during boot up in PetaLin
 ### Build and package PetaLinux
 ```
 cd ./AXU9EG_AXU15EG/linux/petalinux
-petalinux-config --get-hw-description=<path of .xsa file>
+petalinux-config --get-hw-description=<path of .xsa file> --silentconfig
 petalinux-build
 petalinux-package --boot --u-boot --fpga --force
 ```
