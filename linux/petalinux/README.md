@@ -8,6 +8,7 @@ Key changes:
 
 ### Build and package PetaLinux
 ```
+git clone https://github.com/yjpark21/AXU9EG_AXU15EG
 cd ./AXU9EG_AXU15EG/linux/petalinux
 petalinux-config --get-hw-description=<path of .xsa file> --silentconfig
 petalinux-build
