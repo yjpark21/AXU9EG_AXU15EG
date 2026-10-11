@@ -39,6 +39,22 @@ do
 		if test -e ${devtype} ${devnum}:${distro_bootpart} /system.dtb; then
 			fatload ${devtype} ${devnum}:${distro_bootpart} 0x40000000 system.dtb;
 		fi
+
+		# =============== Force SD card operation mode ===============
+		# Specify DTB address and expand
+		fdt addr 0x40000000
+		fdt resize 8192
+
+		# Prevent 1.8V operation
+		fdt set /axi/mmc@ff170000 no-1-8-v
+		fdt set /axi/mmc@ff170000 cap-sd-highspeed
+
+		# Remove high speed operation mode switches
+		fdt rm /axi/mmc@ff170000 sd-uhs-sdr104
+		fdt rm /axi/mmc@ff170000 sd-uhs-sdr50
+		fdt rm /axi/mmc@ff170000 sd-uhs-ddr50
+		# ==========================================================
+
 		booti 0x00200000 - 0x40000000
 		exit;
 	fi
