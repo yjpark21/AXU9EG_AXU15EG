@@ -40,6 +40,8 @@ do
 			fatload ${devtype} ${devnum}:${distro_bootpart} 0x40000000 system.dtb;
 		fi
 
+		setenv bootargs "earlycon console=ttyPS0,115200 clk_ignore_unused root=/dev/mmcblk1p2 rw rootwait rootfstype=ext4"
+
 		# =============== Force SD card operation mode ===============
 		# Specify DTB address and expand
 		fdt addr 0x40000000
