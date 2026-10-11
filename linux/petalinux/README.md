@@ -20,7 +20,7 @@ gzip -f images/linux/petalinux-sdimage.wic
 ```
 The wic image can be used to write to SD card using balenaEtcher (https://etcher.balena.io/).
 
-### Check pre-downloaded Yocto mirror and sstate cache
+### (Optional) Use pre-downloaded Yocto mirror and sstate cache
 You can download Yocto mirror data and sstate cache from Xilinx Petalinux Download page to avoid online downloading and save build time.
 ```
 vi project-spec/meta-user/conf/petalinuxbsp.conf
