@@ -46,3 +46,4 @@ Settings overridden by hard-coding:
 - bootargs
 - Addresses of image loaded
 - SD card related settings
+- fstab
