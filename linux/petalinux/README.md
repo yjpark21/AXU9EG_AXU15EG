@@ -43,3 +43,4 @@ SSTATE_DIR = "/home/vivado/yocto_sstate_aarch64"
 Because some tricks are hard-coded, using petalinux-config may have no effect.  
 - bootargs
 - Addresses of image loaded
+- SD card related settings
