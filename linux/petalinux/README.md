@@ -16,11 +16,12 @@ petalinux-package --boot --u-boot --fpga --force
 ```
 
 ### Prepare SD card
-Copy build results (images/linux) to SD card first partition (FAT32).
+1. Copy build results (images/linux) to SD card first partition (FAT32).
 - BOOT.BIN
 - boot.scr
 - system.dtb
 - Image (not image.ub)
+2. Extract rootfs to SD card second partition (ext4)
 
 ### (Optional) Create .wic package
 ```
