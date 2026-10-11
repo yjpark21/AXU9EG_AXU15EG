@@ -1,3 +1,6 @@
+### What is this?
+This is a modified version of PetaLinux, converted from the original ALINX project for PetaLinux v2020.1 to work with PetaLinux v2022.2.
+
 ### Build and package PetaLinux
 ```
 cd ./AXU9EG_AXU15EG/linux/petalinux
