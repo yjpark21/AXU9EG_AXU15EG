@@ -1,5 +1,6 @@
 ### What is this?
 This is a modified version of PetaLinux Yocto project, converted from the original ALINX project for PetaLinux v2020.1 to work with PetaLinux v2022.2.
+There are some problems with SD card negotiation steps during boot up in PetaLinux v2022.2, some tricks are necessary to work. The u-boot script is modified for it (project-spec/meta-user/recipes-bsp/u-boot/u-boot-zynq-scr/boot.cmd.default.initrd).
 
 ### Build and package PetaLinux
 ```
@@ -9,7 +10,7 @@ petalinux-build
 petalinux-package --boot --u-boot --fpga --force
 ```
 
-### Copy images to SD card
+### Prepare SD card
 Copy build results (images/linux) to SD card first partition (FAT32).
 - BOOT.BIN
 - boot.scr
