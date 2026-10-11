@@ -20,6 +20,7 @@ petalinux-package --wic --bootfiles "BOOT.BIN boot.scr Image system.dtb" \
 ```
 
 ### Check pre-downloaded Yocto mirror and sstate cache
+You can download Yocto mirror data and sstate cache from Xilinx Petalinux Download page to avoid online downloading and save build time.
 ```
 vi project-spec/meta-user/conf/petalinuxbsp.conf
 ```
