@@ -1,5 +1,5 @@
 ### What is this?
-This is a modified version of PetaLinux, converted from the original ALINX project for PetaLinux v2020.1 to work with PetaLinux v2022.2.
+This is a modified version of PetaLinux Yocto project, converted from the original ALINX project for PetaLinux v2020.1 to work with PetaLinux v2022.2.
 
 ### Build and package PetaLinux
 ```
