@@ -25,8 +25,7 @@ petalinux-package --boot --u-boot --fpga --force
 
 ### (Optional) Create .wic package
 ```
-petalinux-package --wic --bootfiles "BOOT.BIN boot.scr Image system.dtb"
-gzip -f images/linux/petalinux-sdimage.wic
+petalinux-package --wic --bootfile "BOOT.BIN boot.scr Image system.dtb" --wic-extra-args "-c gzip"
 ```
 The wic.gz image can be used directly to write to SD card using balenaEtcher (https://etcher.balena.io/).
 
